@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Not Approved</title>
+    <style>
+        /* Global Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: #333;
+        }
+
+        /* Message Styling */
+        .message {
+            background-color: #fff;
+            padding: 20px 30px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .message h1 {
+            font-size: 1.8rem;
+            color: #d9534f; /* Red color for warning */
+            margin-bottom: 10px;
+        }
+
+        .message p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        /* Button Styling */
+        .button-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #4e5ef7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #6e7bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <h1>Artist Not Approved</h1>
+        <p>Your account is not approved by the admin yet.</p>
+    </div>
+    <div class="button-group">
+        <a href="ArtistLogin.html" class="button">Login Again</a>
+        <a href="RegisterArtist.jsp" class="button">Register Again</a>
+    </div>
+</body>
+</html>

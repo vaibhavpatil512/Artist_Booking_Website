@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            height: 100vh;
+            padding-top: 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            color: #f4f4f9;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px;
+            border-bottom: 1px solid #444;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            display: block;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            width: calc(100% - 250px);
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        .main-content h1 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Mobile responsiveness */
+        @media screen and (max-width: 768px) {
+            .sidebar {
+                width: 200px;
+            }
+
+            .main-content {
+                margin-left: 200px;
+                width: calc(100% - 200px);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .sidebar {
+                width: 150px;
+            }
+
+            .main-content {
+                margin-left: 150px;
+                width: calc(100% - 150px);
+            }
+
+            .sidebar h2 {
+                font-size: 1.4em;
+            }
+
+            .sidebar ul li a {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>User Dashboard</h2>
+        <ul>
+            <li><a href="user_artistcategory.html">View Artists</a></li>
+            <li><a href="users_view_bookings.jsp">View Bookings</a></li>
+            <li><a href="users_view_pending_bookings.jsp">View Pending Bookings</a></li>
+            <li><a href="users_view_approved_bookings.jsp">View Approved Bookings</a></li>
+            <li><a href="users_view_disapproved_bookings.jsp">View Disapproved Bookings</a></li>
+            <li><a href="index.html">Log Out</a></li>
+        </ul>
+    </aside>
+
+   
+
+</body>
+</html>

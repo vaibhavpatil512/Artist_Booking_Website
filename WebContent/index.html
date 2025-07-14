@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Selection</title>
+    <style>
+        /* Global Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f9fc;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #6e7bff, #4e5ef7);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #e3e7ff;
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        nav button {
+            background-color: #4e5ef7;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hover Effect */
+        nav button:hover {
+            background-color: #6e7bff;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        nav button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(100, 120, 255, 0.5);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 30px 20px;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav button {
+                width: 80%;
+                padding: 12px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Artist Booking</h1>
+        <p>Select your login type to continue</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="Adminlogin.html">
+            <button type="submit">Admin</button>
+        </a>
+        <a href="ArtistLogin.html">
+            <button type="submit">Artist</button>
+        </a>
+        <a href="UserLogin.html">
+            <button type="submit">User</button>
+        </a>
+    </nav>
+
+</body>
+</html>
